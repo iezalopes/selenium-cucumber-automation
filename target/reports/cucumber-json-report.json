@@ -1,0 +1,55 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "add to basket",
+        "description": "",
+        "id": "test;add-to-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 219688300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that i am on the shopping website",
+            "match": {
+              "location": "TestPage.thatIAmOnTheShoppingWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I add an item to the basket",
+            "match": {
+              "location": "TestPage.iAddAnItemToTheBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "i can view the item in my basket",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]
