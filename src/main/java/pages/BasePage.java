@@ -48,28 +48,17 @@ public abstract class BasePage {
         }
     }
 
-    protected void enterTextById (String elementId, String text) {
+    protected void enterTextById(String elementId, String text) {
         locatedById(elementId).sendKeys(text);
     }
 
-    protected void matchText(String elementXPath, String expectedText){
+    protected void matchText(String elementXPath, String expectedText) {
         this.configDriver.driverWait().until(ExpectedConditions.textToBe(By.xpath(elementXPath), expectedText));
         Assert.assertEquals(expectedText, locatedByXPath(elementXPath).getText());
-
-    }
-
-    protected void matchTextBYId(String elementId, String expectedText){
-        this.configDriver.driverWait().until(ExpectedConditions.textToBe(By.id(elementId), expectedText));
-        Assert.assertEquals(expectedText, locatedById(elementId).getText());
-
     }
 
     public void matchAttribute(String elementId, String expectedText, String fieldLocted) {
         Assert.assertEquals(expectedText, locatedById(elementId).getAttribute(fieldLocted));
-    }
-
-    public void matchAttributeByXPath (String elementXPath, String expectedText, String fieldLocted) {
-        Assert.assertEquals(expectedText, locatedByXPath(elementXPath).getAttribute(fieldLocted));
     }
 }
 

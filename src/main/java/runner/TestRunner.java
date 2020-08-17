@@ -13,9 +13,7 @@ import org.junit.runner.RunWith;
         monochrome = true, // habilita cores de execução
         snippets = SnippetType.CAMELCASE,
         dryRun = false, // se for "true" da após executar os metodos faltando
-        strict = false,
-        plugin = {}
+        strict = false
 )
 public class TestRunner {
-
 }
