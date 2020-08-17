@@ -14,7 +14,8 @@ Testing tool structure using cucumber and selenium.
 
 First, download the project and open it with IntelliJ 
 
-__Build Project__
+__Build Project__ (this step is necessary for the IDE to generate your configuration files).
+
 
 In IntelliJ, click on “Add Configuration” select "+" and create a file of type "JUnit"
 
