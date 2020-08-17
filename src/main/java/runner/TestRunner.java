@@ -13,8 +13,7 @@ import org.junit.runner.RunWith;
         //tags = {"@Smoke", "~@RegressionTest"},
         monochrome = true, // habilita cores de execução
         snippets = SnippetType.CAMELCASE,
-        dryRun = false, // se for "true" da após executar os metodos faltando
-        strict = false
+        plugin = {"pretty", "html:target/cucumber-reports"}
 )
 public class TestRunner {
 }

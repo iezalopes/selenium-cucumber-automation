@@ -13,9 +13,9 @@ Feature: Add product to cart
     Then the screen with no results found is displayed
 
   Scenario: Validate search by existent product
-    When user types "Caneta" on the searchbar
+    When user types "garrafa" on the searchbar
     And  click on search button
-    Then the screen with search results for "Caneta" is displayed
+    Then the screen with search results for "garrafa" is displayed
 
   Scenario: Validate product addition to cart successfully
     And  user types "Caneca" on the searchbar
@@ -24,5 +24,4 @@ Feature: Add product to cart
     And  tap on the first result
     And  click the buy button
     Then the product was successfully added to the cart
-
 
