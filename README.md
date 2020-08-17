@@ -12,7 +12,7 @@ Testing tool structure using cucumber and selenium.
  
 ## Usage
 
-First, download the project and open it with IntelliJ and Build Project
+First, download the project and open it with IntelliJ and Build Project.
 
 In IntelliJ, click on “Add Configuration” select "+" and create a file of type "JUnit"
 
